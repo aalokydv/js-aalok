@@ -20,7 +20,7 @@
 
 //refrence (non primitive) data type :-
 
-// array, objects,functions     //these have data type known as function shows in output when we check 
+// array, objects,functions     //these have data type known as object/function shows in output when we check 
 
 //array
 const heros = ["shaktiman" , "naagraj " , "doga"];
@@ -39,3 +39,29 @@ const myFunction = function(){
 console.log();
 
 console.log(typeof heros);
+//======================================================//
+
+// stack(primitive) = call by copy(value) , heap (non- primitive) = call by refrence, changes we make will show in orignal too
+
+let myyoutubename = "aalokslimshadydotcom"
+
+let anothername = myyoutubename
+anothername ="aalokydv"
+
+console.log(myyoutubename);
+console.log(anothername);
+
+let userone = {
+    email : "aalok1010",
+    upi : "aalok@upi"
+
+}
+
+let usertwo = userone
+
+
+usertwo.email= "aalok74047"
+
+
+console.log(userone.email);
+console.log(usertwo.email);
